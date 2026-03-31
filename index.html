@@ -12,6 +12,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-18050714972');
+    gtag('config', 'AW-18054548744');
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -887,6 +888,7 @@
 
         if (res.ok) {
           gtag('event', 'conversion', {'send_to': 'AW-18050714972/u1NHCL6CoZMcENyaoJ9D'});
+          gtag('event', 'conversion', {'send_to': 'AW-18054548744/i4_JCPuLk5McEIiaiqFD', 'value': 1.0, 'currency': 'EUR'});
           document.getElementById('waitlistForm').style.display = 'none';
           document.getElementById('waitlistSuccess').style.display = 'block';
         } else if (res.status === 409 || res.status === 409) {
