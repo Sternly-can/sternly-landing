@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SternLy – Automatische KI-Antworten auf Google-Bewertungen</title>
   <meta name="description" content="SternLy beantwortet deine Google-Bewertungen automatisch mit KI – persönlich, auf Deutsch, ab 19 €/Monat." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18050714972"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18050714972');
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -878,6 +886,7 @@
         });
 
         if (res.ok) {
+          gtag('event', 'conversion', {'send_to': 'AW-18050714972/u1NHCL6CoZMcENyaoJ9D'});
           document.getElementById('waitlistForm').style.display = 'none';
           document.getElementById('waitlistSuccess').style.display = 'block';
         } else if (res.status === 409 || res.status === 409) {
