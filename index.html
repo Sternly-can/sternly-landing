@@ -289,11 +289,12 @@
     /* ===== PRICING ===== */
     .pricing-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px; margin-top: 48px; align-items: start;
+      gap: 24px; margin-top: 48px; align-items: stretch;
     }
     .pricing-card {
       background: white; border: 1px solid var(--border); border-radius: var(--radius-lg);
       padding: 36px; position: relative; transition: box-shadow 0.2s;
+      display: flex; flex-direction: column;
     }
     .pricing-card:hover { box-shadow: var(--shadow-md); }
     .pricing-card.featured {
@@ -311,7 +312,7 @@
     .pricing-price { display: flex; align-items: baseline; gap: 4px; margin-bottom: 24px; }
     .pricing-amount { font-size: 44px; font-weight: 800; letter-spacing: -0.02em; }
     .pricing-period { font-size: 15px; color: var(--text-muted); }
-    .pricing-features { list-style: none; margin-bottom: 28px; }
+    .pricing-features { list-style: none; margin-bottom: 28px; flex-grow: 1; }
     .pricing-features li {
       display: flex; align-items: flex-start; gap: 10px;
       padding: 8px 0; font-size: 15px; color: var(--text-soft);
